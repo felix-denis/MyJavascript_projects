@@ -1,6 +1,6 @@
 body{
     margin: 0px;
-    background-color: rgb(75, 75, 75);
+    background: linear-gradient(180deg,blue,green);
 
 }
 .clock-container{
@@ -16,5 +16,5 @@ body{
     font-size: 2em;
     font-weight: bold;
     color: whitesmoke;
-    
+
 }
