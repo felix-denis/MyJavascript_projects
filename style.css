@@ -1,0 +1,20 @@
+body{
+    margin: 0px;
+    background-color: rgb(75, 75, 75);
+
+}
+.clock-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+#clock{
+    font-family: verdana;
+    font-size: 2em;
+    font-weight: bold;
+    color: whitesmoke;
+    
+}
