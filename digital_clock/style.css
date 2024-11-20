@@ -16,5 +16,7 @@ body{
     font-size: 2em;
     font-weight: bold;
     color: whitesmoke;
-
+    padding: 30px;
+    border: 2px solid #9acd32;
+    border-radius: 15px;
 }

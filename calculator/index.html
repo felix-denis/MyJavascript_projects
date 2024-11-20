@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <div id="container">
+      <h2>This is a calculator using Java Script</h2>
+      <div id="calculator">
+        <input type="text" id="result" readonly />
+        <div class="keys">
+          <button onclick="input('+')" class="symbol">+</button>
+          <button onclick="input('7')">7</button>
+          <button onclick="input('8')">8</button>
+          <button onclick="input('9')">9</button>
+          <button onclick="input('-')" class="symbol">-</button>
+          <button onclick="input('4')">4</button>
+          <button onclick="input('5')">5</button>
+          <button onclick="input('6')">6</button>
+          <button onclick="input('*')" class="symbol">*</button>
+          <button onclick="input('1')">1</button>
+          <button onclick="input('2')">2</button>
+          <button onclick="input('3')">3</button>
+          <button onclick="input('/')" class="symbol">/</button>
+          <button onclick="input('0')">0</button>
+          <button onclick="input('.')">.</button>
+          <button onclick="calculate()">=</button>
+          <button onclick="clearResult()" class="symbol">C</button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
