@@ -1,22 +1,20 @@
-body{
-    margin: 0px;
-    background: linear-gradient(180deg,blue,green);
-
+body {
+  margin: 0px;
+  background: linear-gradient(180deg, blue, green);
 }
-.clock-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-
+.clock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-#clock{
-    font-family: verdana;
-    font-size: 2em;
-    font-weight: bold;
-    color: whitesmoke;
-    padding: 30px;
-    border: 2px solid #9acd32;
-    border-radius: 15px;
+#clock {
+  font-family: verdana;
+  font-size: 2em;
+  font-weight: bold;
+  color: whitesmoke;
+  padding: 30px;
+  border: 2px solid #9acd32;
+  border-radius: 15px;
 }

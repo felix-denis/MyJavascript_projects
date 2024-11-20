@@ -1,19 +1,17 @@
 let display = document.getElementById("result");
 
-function input(input){
-    display.value += input;
+function input(input) {
+  display.value += input;
 }
 
-function clearResult(){
-    display.value = "";
+function clearResult() {
+  display.value = "";
 }
 
-function calculate(){
-    try{
-        display.value = eval(display.value);
-    } catch{
-        display.value = "error";
-    }
-    
+function calculate() {
+  try {
+    display.value = eval(display.value);
+  } catch {
+    display.value = "error";
+  }
 }
-

@@ -1,62 +1,59 @@
-body{
-    margin: 0;
-    background-color: hsl(0, 0%, 50%);
+body {
+  margin: 0;
+  background-color: hsl(0, 0%, 50%);
 }
-#container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-#calculator{
-    width: 400px;
-    border-radius: 15px;
-    background-color: hsl(0, 0%, 69%);
-    
+#calculator {
+  width: 400px;
+  border-radius: 15px;
+  background-color: hsl(0, 0%, 69%);
 }
-#result{
-    width: 100%;
-    padding: 25px 0px;
-    font-size: 3em;
-    border: none;
-    border-radius: 15px;
-    overflow: hidden;
-    text-align: left;
-    font-family: verdana, sans-serif;
+#result {
+  width: 100%;
+  padding: 25px 0px;
+  font-size: 3em;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: left;
+  font-family: verdana, sans-serif;
 }
-.keys{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
-button{
-   background-color: hsl(0, 0%, 35%);
-   color: white;
-   font-size: 3rem;
-   font-weight: bold;
-   width: 80px;
-   height: 80px;
-   border: none;
-   border-radius: 50%;
-   margin: 5px;
-   text-align: center;
-   align-content: center;
-
+button {
+  background-color: hsl(0, 0%, 35%);
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  width: 80px;
+  height: 80px;
+  border: none;
+  border-radius: 50%;
+  margin: 5px;
+  text-align: center;
+  align-content: center;
 }
-.symbol{
-    background-color: hsl(39, 98%, 40%);
+.symbol {
+  background-color: hsl(39, 98%, 40%);
 }
-button:hover{
-    background-color: hsl(0, 0%, 45%);
+button:hover {
+  background-color: hsl(0, 0%, 45%);
 }
-button:active{
-    background-color: hsl(0, 0%, 55%);
+button:active {
+  background-color: hsl(0, 0%, 55%);
 }
 
-.symbol:hover{
-    background-color: hsl(39, 98%, 50%);
+.symbol:hover {
+  background-color: hsl(39, 98%, 50%);
 }
-.symbol:active{
-    background-color: hsl(39, 98%, 60%);
+.symbol:active {
+  background-color: hsl(39, 98%, 60%);
 }
