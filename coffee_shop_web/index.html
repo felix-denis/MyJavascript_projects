@@ -1,43 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Coffee Shop</title>
 
-   
-
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header class="header">
-        <a href="#" class="logo">
-            <img src="/Images/logo.jpg" alt="This is a picture of logo of this coffee shop" width="75px">
+      <a href="#" class="logo">
+        <img
+          src="/Images/logo.jpg"
+          alt="This is a picture of logo of this coffee shop"
+          width="75px"
+        />
+      </a>
 
-        </a>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#Menu">Menu</a>
+        <a href="#Products">Products</a>
+        <a href="#Review">Review</a>
+        <a href="#Contacts">Contacts</a>
+        <a href="#Blog">Blog</a>
+      </nav>
 
-        <nav class="navbar">
-            <a href="#Home">Home</a>
-            <a href="#About">About</a>
-            <a href="#Menu">Menu</a>
-            <a href="#Products">Products</a>
-            <a href="#Review">Review</a>
-            <a href="#Contacts">Contacts</a>
-            <a href="#Blog">Blog</a>
-        </nav>
+      <div class="icons">
+        <a href="#"><div id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></div></a>
+        <a href="#"><div id="cart-btn"><i class="fa-solid fa-cart-shopping"></i></div></a>
+        <a href="#"><div id="menu-btn"><i class="fa-solid fa-bars"></i></div></a>
+      </div>
+      <!-- This is code to assign the icons its fucntionality and the content -->
 
+      <!-- This if the search container -->
 
-        <div class="icons">
-            <div><i class="fa-solid fa-magnifying-glass"></i></div>
-            <div><i class="fa-solid fa-cart-shopping"></i></div>
-            <div><i class="fa-solid fa-bars"></i></div>
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="Search here..." />
+        <label for="search-box" class="fa-solid fa-magnifying-glass"> </label>
+      </div>
+
+      <!-- This is the cart items container============ -->
+
+      <div class="cart-items-container">
+       
+        <div class="cart-item">
+          <i class="fa-solid fa-circle-xmark"></i>
+          <img src="/Images/images (9).jpg" />
+          
+          <div class="content">
+            <h3>Cart item 01</h3>
+            <div class="price">$15.00</div>
+          </div>
         </div>
-
-
-
-
-        <script src="https://kit.fontawesome.com/4d99246f7d.js" crossorigin="anonymous"></script>
-        <script src="index.js"></script>
+        <div class="cart-item">
+          <i class="fa-solid fa-circle-xmark"></i>
+          <img src="/Images/images (10).jpg" />
+          <div class="content">
+            <h3>Cart item 02</h3>
+            <div class="price">$16.00</div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <i class="fa-solid fa-circle-xmark"></i>
+          <img src="/Images/images (12).jpg" />
+          <div class="content">
+            <h3>Cart item 03</h3>
+            <div class="price">$25.00</div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <i class="fa-solid fa-circle-xmark"></i>
+          <img src="/Images/images (7).jpg" />
+          <div class="content">
+            <h3>Cart item 04</h3>
+            <div class="price">$115.00</div>
+          </div>
+        </div>
+        <a href="#" class="btn">Checkout now</a>
+      </div>
     </header>
-</body>
+
+    <!-- home section start-->
+      
+    <section class="home" id="home">
+      <div class="content">
+        <h3>fresh coffee in the morning</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id labore quo unde, itaque repellendus voluptatibus fugiat natus non! Nostrum in iure deleniti debitis ullam sint eaque, quos temporibus! Id, quidem.</p>
+        <a href="" class="btn">get yours now</a>
+      </div>
+    </section>
+    <!-- home section end -->
+
+    <!--about section start  -->
+
+<section class="about" id="about">
+  <h1 class="heading"><span>about</span> us</h1>
+  <div class="row">
+    <div class="image">
+      <img src="/Images/images (9).jpg" alt="">
+    </div>
+    <div class="content">
+      <h3>What makes our coffee special</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque aut aliquid minima magni velit, officiis consequuntur odio quam voluptatem quia nesciunt ullam sit praesentium quo nobis quasi facere incidunt enim.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit deleniti expedita necessitatibus fugiat enim incidunt porro corrupti sapiente exercitationem alias repellendus quos debitis nobis, esse amet ratione aperiam consequatur cupiditate!</p>
+      <a href="#" class="btn">Learn more</a>
+    </div>
+  </div>
+
+</section>
+
+    <!--about section end -->
+    <script src="https://kit.fontawesome.com/4d99246f7d.js" crossorigin="anonymous"></script>
+    
+    <script src="index.js"></script>
+  </body>
 </html>

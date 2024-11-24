@@ -1,9 +1,348 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-:root{
-    --primary-color: ;
-    --secondary-color: ;
-    --background-color: ;
-    --font-family: 'Roboto', arial, sans-serif;
-    
+:root{ 
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #010103;
+    --border: 1px solid rgba(255, 255, 255, .3);
+
+}
+*{
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+
+}
+ html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+
+}
+html::-webkit-scrollbar{
+    width: .9rem;
+
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+
+}
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+body{
+    background: var(--bg);
+    color: white;
+}
+section{
+    padding: 2rem 7%;
+}
+.heading {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+.heading span{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 10px 4px;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+.btn:hover{
+    letter-spacing: .2rem;
+    border-radius: 5px;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--bg);
+    padding: 1.5rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: var(--border);
+    z-index: 1000;
+
+}
+.header .logo img{
+    border-radius: 50px;
+    user-select: none;
+}
+.header .navbar a{
+    position: relative;
+    font-size: 2rem;
+    font-weight: 300px;
+    margin-left: 40px;
+    color: #fff;
+}
+ .header .navbar a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: .6px;
+    width: 100%;
+    height: 2.5px;
+    background: #fff;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+    border-radius: 5px;
+}
+.header .navbar a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+    background: var(--main-color);
+}
+.header .navbar a:hover{
+    color: var(--main-color);
+}
+
+.header .icons {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+.header .icons a{
+    font-size: 2rem;
+    font-weight: 300px;
+    margin-left: 20px;
+    color: white;
+}
+.icons a:hover{
+    color: var(--main-color);
+}
+#menu-btn{
+    display: none;
+}
+.header .search-form{
+    position: absolute;
+    top: 115%;
+    right: 5%;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    transition: transform .5s;
+    transform-origin: top;
+    transform: scaleY(0);
+}
+.header .search-form.active{
+    transform: scaleY(1);
+}
+.search-form input{
+    height: 100%;
+    width: 100%;
+    color: var(--black);
+    text-transform: none;
+    padding: 1rem;
+}
+.search-form label{
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: white;
+
+}
+.search-form label:hover{
+    color: var(--main-color);
+
+}
+
+.cart-items-container{
+    background-color: whitesmoke;
+    position: absolute;
+    color: var(--black);
+    top: 100%;
+    right: -100%;
+    padding: 0 1.5rem;
+    width: 35rem;
+    height: calc(100vh - 9.5rem);
+    border-radius: 5px;
+    transition: right .5s;
+}
+.cart-items-container.active{
+    right: 0;
+}
+.cart-items-container .cart-item{
+    position: relative;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+.cart-items-container .cart-item .fa-circle-xmark{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    color: var(--black);
+
+}
+.cart-items-container .cart-item .fa-circle-xmark:hover{
+    color: var(--main-color);
+
+}
+.cart-items-container .cart-item img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 5px;
+}
+.cart-items-container .cart-item .content h3{
+    font-size: 2rem;
+    color: var(--black);
+    padding-bottom: .5rem;
+}
+.cart-items-container .cart-item .content .price{
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+.header .cart-items-container .btn{
+    width: 100%;
+    text-align: center;
+}
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url("/Images/images (10).jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.home .content {
+    max-width: 60rem;
+}
+.home .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+.home .content p{
+    font-size: 1rem;
+    font-weight: lighter;
+    line-height: 1.8rem;
+    padding: 1rem;
+    color: #eee;
+    backdrop-filter: blur(15px);
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    background: var(--bg);
+    flex-wrap: wrap;
+}
+.about .row .image{
+    flex: 1 1 45rem;
+}
+.about .row .image img{
+    width: 100%;
+}
+
+.about .row .content{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+.about .row .content h3{
+    font-size: 3rem;
+    color: #fff;
+
+}
+.about .row .content p{
+    font-size: 1.5rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media (max-width: 900px){
+    html{
+        font-size: 55%;
+
+    }
+    .header{
+        padding: 1.5rem 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 700px){
+    #menu-btn{
+        display: inline-block;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+        border-radius: 5px;
+        transition: right .5s;
+    }
+    .header .navbar.active{
+        right: 0;
+    }
+    .header .navbar a{
+        color: var(--black);
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 2rem;
+    }
+    .header .search-form{
+        width: 90%;
+        right: 2rem;
+    }
+    .home{
+        background-position: left;
+        justify-content: center;
+    }
+    .home .content{
+        max-width: 100%;
+        text-align: center;
+    }
+    .home .content h3{
+        font-size: 4.5rem;
+    }
+    .home .content p{
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 400px){
+    html{
+        font-size: 45%;
+    }
 }

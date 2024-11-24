@@ -113,7 +113,7 @@ header {
     border-bottom-left-radius: 15px;
     font-size: 2em;
     cursor: pointer;
-    z-index: 1;
+    z-index: 99;
 
 }
 .wrapper.popup{
