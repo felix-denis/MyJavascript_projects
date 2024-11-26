@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background: #363636;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: whitesmoke;
+    flex-direction: column;
+    height: 90vh;
+    background: rgb(253, 143, 0); 
+    width: 500px;
+    border-radius: 5px;
+    margin-top: 5vh;
+
+}
+.container h2{
+    font-size: 3em;
+    font-weight: 500px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.container p{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.container #playerDisplay, #computerDisplay{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+button{
+    font-size: 1.5em;
+    padding: 5px;
+    color: white;
+    background:hsl(263, 100%, 50%);
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 9px; 
+
+}
+button:hover{
+    background:hsl(263, 100%, 60%);
+}
+button:active{
+    background:hsl(263, 100%, 70%);
+}
+.container .choices{
+    margin-bottom: 40px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+.container .choices div{
+    margin-left: 40px;
+    font-size: 2em;
+    font-weight: 500px;
+    color: #00ffee;
+    cursor: pointer;
+    font-family: monospace;
+}
+  #result{
+    font-size: 3em;
+    color: grey;
+}
+  #result.green{
+    color: green;
+}
+  #result.red{
+    color: red;
+}
+.scores h3{
+    text-transform: uppercase;
+    font-size: 2em;
+    text-decoration: underline; 
+    color: rgb(98, 0, 255);
+}
